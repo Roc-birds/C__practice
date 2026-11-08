@@ -2,7 +2,7 @@
 /*
 int a = 0;
 namespace stat
-{  
+{
 	int a = 4;
 	namespace one
 	{
@@ -24,6 +24,7 @@ int main()
 }
 */
 
+/*
 #include<iostream>
 //using namespace std;
 using  std::cout;
@@ -40,5 +41,32 @@ int main()
 	cout << endl;
 	cin >> c;
 	cout << a << endl << b <<endl<<c<< endl;
+	return 0;
+}
+*/
+
+//函数重载  引用
+#include<iostream>
+using namespace std;
+void sweap(int& a, int& b)
+{
+	int c = a;
+	a = b;
+	b = c;
+	cout << a <<" " << b << endl;
+}
+void sweap(double& a, double& b)
+{
+	double c = a;
+	a = b;
+	b = c;
+	cout << a << " " << b << endl;
+}
+int main()
+{
+	int a = 2, b = 4;
+	sweap(a, b);
+	double c = 1.5, d = 2.5;
+	sweap(c, d);
 	return 0;
 }
