@@ -1,4 +1,24 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+    int ID;
+	void classmate(int ID)
+	{
+		cout << name << endl;
+	}
+private:
+	char name='P';
+};
+int main()
+{
+	student A;
+	A.ID = 110;
+	A.classmate(A.ID);
+}
+
 /*
 int a = 0;
 namespace stat
@@ -46,6 +66,7 @@ int main()
 */
 
 //函数重载  引用
+/*
 #include<iostream>
 using namespace std;
 void sweap(int& a, int& b)
@@ -70,3 +91,4 @@ int main()
 	sweap(c, d);
 	return 0;
 }
+*/
