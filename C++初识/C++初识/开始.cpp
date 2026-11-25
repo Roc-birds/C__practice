@@ -1,6 +1,59 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 using namespace std;
+class Time {
+public:
+	Time(int year = 2000, int month = 1, int day = 1)
+	{
+		_year = year;
+		_month = month;
+		_day = day;
+	}
+private:
+	int _year;
+	int _month;
+	int _day;
+
+};
+
+int main()
+{
+	Time A1;
+	Time A2(2026, 11, 25);
+	return 0;
+}
+
+/*
+#include<iostream>
+using namespace std;
+class grow
+{
+public:
+	void cow(int a)
+	{
+		_a = a;
+	}
+	void Printf(int a)
+	{
+		cout << "name" << endl;
+		cout << _a << endl;
+		//指针为空指针，并不是真正的对象
+	}
+private:
+	int _a;
+};
+
+int main()
+{
+	grow* p = nullptr;
+	p->Printf(1);
+	return 0;
+}
+*/
+
+/*
+#include<iostream>
+using namespace std;
 class student
 {
 public:
@@ -19,6 +72,7 @@ int main()
 	A.ID = 110;
 	A.classmate(A.ID);
 }
+*/
 
 /*
 int a = 0;
