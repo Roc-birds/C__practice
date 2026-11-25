@@ -11,6 +11,7 @@ public:
 	}
 private:
 	char name='P';
+	//声明变量，不会开辟任何内存
 };
 int main()
 {
