@@ -3,11 +3,20 @@
 using namespace std;
 class Time {
 public:
+	//默认函数
 	Time(int year = 2000, int month = 1, int day = 1)
 	{
 		_year = year;
 		_month = month;
 		_day = day;
+		cout << _year << '/' << _month << '/' << _day << endl;
+	}
+	//析构函数
+	~Time()
+	{
+		_year = 0;
+		_month = 0;
+		_day = 0;
 	}
 private:
 	int _year;
