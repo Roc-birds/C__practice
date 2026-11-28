@@ -18,17 +18,30 @@ public:
 		_month = 0;
 		_day = 0;
 	}
+	//拷贝函数
+	Time(const Time& a)
+	{
+		_year = a._year;
+		cout << "拷贝函数" << endl;
+	}
 private:
 	int _year;
 	int _month;
 	int _day;
 
 };
+//void _time(Time a)
+void _time(Time &a) {
+	cout << "进入函数" << endl;
+}
 
 int main()
 {
 	Time A1;
 	Time A2(2026, 11, 25);
+	//拷贝构造
+	Time A3(A2);//Time A3 = A2；
+	_time(A2);
 	return 0;
 }
 
